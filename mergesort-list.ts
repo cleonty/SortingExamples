@@ -22,7 +22,7 @@ function merge(list1, list2: List): List {
         return list2;
     } else if (list2 == null) {
         return list1;
-    } else if (list1.x < list2.x) {
+    } else if (list1.x <= list2.x) {
         list1.next = merge(list1.next, list2);
         return list1;
     } else {
